@@ -1,0 +1,260 @@
+
+* { margin:0; padding:0; } /* to remove the top and left whitespace */
+
+html{
+    width:945px;
+    height: 370px;
+    /*border: 2px solid red;*/
+    /*background: linear-gradient( 360deg, #D9D9D9 0%, #ECECEC 30%, #FFF 100%);*/
+    font-family: "Century Gothic", sans-serif;
+} /* just to be sure these are full screen*/
+
+svg{
+  /*display: none;*/
+}
+
+figure{
+  width: 60%;
+  margin: 0 auto;
+}
+
+/*body div{*/
+  /*display: inline-block;*/
+/*}*/
+
+#formDiv{
+  width: 15%;
+  margin: 2%;
+}
+
+#info{
+    position: absolute;
+    top: 15px;
+    left: 180px;
+    width: 766px;
+    height: 355px;
+    z-index: 98;
+}
+
+#info-ges1{
+    position: absolute;
+    left: 725px;
+    top: 220px;
+}
+
+#info-ges2{
+    position: absolute;
+    left: 545px;
+    top: 295px;
+}
+
+#info-ges3{
+    position: absolute;
+    left: 200px;
+    top: 190px;
+}
+
+.timeFulling{
+    color: #4caf50;
+}
+
+.volume{
+    color: #009688;
+}
+
+canvas { display:block; }
+
+label input{
+    font-family: "Century Gothic", sans-serif;
+    width: 100px;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0 5px 0 15px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #888;
+    resize: none;
+}
+
+fieldset{
+  text-align: center;
+  padding-bottom: 7px;
+}
+
+.circles{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #24af29;
+  margin-bottom: -10px;
+}
+
+.images{
+  position: absolute;
+  top: 15px;
+  left: 180px;
+}
+
+#ges1{
+  /*clip-path: polygon(72.8% 30.7%, 87.9% 30.7%, 82.8% 49.1%, 75.3% 49.1%);*/
+  clip-path:  polygon(74.695% 46.682%, 83.305% 46.682%, 82.8% 49.1%, 75.3% 49.1%);
+}
+
+#ges2{
+  /*clip-path:  polygon(49.9% 54.1%, 65.5% 54.1%, 60.305% 70.182%, 52.1% 70.182%);*/
+  clip-path:  polygon(52.1% 70.182%, 60.305% 70.182%, 60% 72.5%, 52.5% 72.5%);
+}
+
+#ges3{
+  /*clip-path:  polygon(11.1% 23.6%, 26.3% 23.6%, 24.1% 40.182%, 15.8% 40.182%);*/
+  clip-path:  polygon( 15.8% 40.182%, 24.1% 40.182%, 23.7% 42%, 16.2% 42%);
+}
+
+
+#kanal1{
+    transition: clip-path 0.5s;
+    clip-path: polygon(82.5% 36.5%, 80.8% 40.1%, 79.9% 43%,   78.9% 47.8%,
+                     78.9% 47.8%, 79.9% 43%,   80.8% 40.1%, 82.5% 36.5%,
+                     84.5% 31.4%, 97.5% 20.9%, 97.5% 20.9%, 84.5% 31.4%);
+  /*clip-path: polygon(82.8% 33.6%, 80.4% 38.2%, 78.9% 43%,   78%   47.8%,*/
+                     /*78.9% 47.8%, 79.9% 43%,   80.8% 40.1%, 82.5% 36.5%,*/
+                     /*85.1% 33.1%, 97.9% 22.8%, 97.5% 20.9%, 84.5% 31.4%);*/
+
+}
+
+#kanal2{
+    transition: clip-path 0.5s;
+  /*clip-path:polygon(60.1% 56.7%, 57.9% 60.7%, 56%   66.5%, 55.2% 71.2%,*/
+                    /*56.1% 71.2%, 56.9% 66.9%, 58.6% 62.1%, 60.3% 59%,*/
+                    /*62.2% 56.7%, 75%   46.7%, 74.7% 44.2%, 62.8% 53.6%);*/
+  /*75.1%   46.7%, 74.8% 44.1%, 62.8% 53.6%*/
+    clip-path:polygon(60.3% 59%,   58.6% 62.1%, 56.9% 66.9%, 56.1% 71.2%,
+                    56.1% 71.2%, 56.9% 66.9%, 58.6% 62.1%, 60.3% 59%,
+                    62.2% 56.7%, 75%   46.7%, 75%   46.7%, 62.2% 56.7%);
+}
+
+#kanal3{
+  /*clip-path: polygon(37.5% 77.7%, 51.9% 67.8%, 52.2% 70.2%, 38% 79.8%)*/
+    clip-path: polygon(38% 79.8%, 52.2% 70.2%, 52.2% 70.2%, 38% 79.8%);
+    transition: clip-path 0.5s;
+}
+
+#kanal4{
+  /*clip-path: polygon(16.4% 26.8%, 18.4% 30.5%, 19.9% 35.1%, 20.9% 40.6%,*/
+                     /*19.8% 40.6%, 19.2% 36.9%, 17.6% 31.9%, 16.2% 29%,*/
+                     /*14%   26.1%, 1.1%  15.8%, 1.5%  14%,   14%   23.8%);*/
+  clip-path: polygon(16.2% 29%,   17.6% 31.9%, 19.2% 36.9%, 19.8% 40.6%,
+                     19.8% 40.6%, 19.2% 36.9%, 17.6% 31.9%, 16.2% 29%,
+                     14%   26.1%, 1.1%  15.8%, 1.1%  15.8%, 14%   26.1%);
+}
+
+#kanal5{
+  /*clip-path: polygon(24.3% 36.6%, 39.1% 78.1%, 38.1% 79.2%, 23.9% 39.6%);*/
+    clip-path: polygon(23.9% 39.6%, 38.1% 79.2%, 38.1% 79.2%, 23.9% 39.6%);
+    transition: clip-path 0.5s;
+}
+
+#ges-end{
+  /*clip-path: polygon(20% 88%, 37.9% 74.8%, 39.3% 79.1%, 21% 92.4%);*/
+    clip-path: polygon(21% 92.4%, 39.3% 79.1%, 39.3% 79.1%, 21% 92.4%);
+    background-color: #00b6f4;
+    transition: clip-path 0.5s;
+}
+/*fieldset legend{*/
+  /*float: left;*/
+/*}*/
+
+/*.mwe-popups.mwe-popups-is-not-tall {*/
+  /*width: 300px;*/
+/*}*/
+
+#roghun{ width: 300px;}
+#sangtuda{ width: 410px;}
+#norak{ width: 470px;}
+
+.mwe-popups-fade-in-up {
+  -webkit-animation: mwe-popups-fade-in-up 0.2s ease forwards;
+  -moz-animation: mwe-popups-fade-in-up 0.2s ease forwards;
+  -o-animation: mwe-popups-fade-in-up 0.2s ease forwards;
+  animation: mwe-popups-fade-in-up 0.2s ease forwards;
+}
+.mwe-popups {
+    position: absolute;
+    z-index: 110;
+    background: #fff;
+    box-shadow: 0 30px 90px -20px rgba(0, 0, 0, 0.3), 0 0 1px rgba(0, 0, 0, 0.5);
+    padding: 20px 15px 15px 15px;
+    /*display: none;*/
+    font-size: 14px;
+    line-height: 20px;
+    min-width: 300px;
+    border-radius: 2px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.mwe-popups .mwe-popups-container {
+    margin-top: -9px;
+    /*padding: 9px;*/
+    color: #000;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.mwe-popups.mwe-popups-image-tri:before {
+    z-index: 111;
+    content: '';
+    position: absolute;
+    border: 9px solid transparent;
+}
+
+.mwe-popups.mwe-popups-image-tri:after {
+    content: '';
+    position: absolute;
+    border: 12px solid transparent;
+    z-index: 112;
+}
+
+#norak:before{
+    border-right: 0;
+    border-left: 9px solid #bbbbbb;
+    top: 165px;
+    left: 500px;
+}
+
+#norak:after{
+    border-right: 0;
+    border-left: 12px solid #ffffff;
+    top: 162px;
+    left: 496px;
+}
+
+#roghun:before{
+    border-right: 0;
+    border-left: 9px solid #bbbbbb;
+    top: 65px;
+    left: 330px;
+}
+
+#roghun:after{
+    border-right: 0;
+    border-left: 12px solid #ffffff;
+    top: 62px;
+    left: 326px;
+}
+
+#sangtuda:before{
+    border-left: 0;
+    border-right: 9px solid #bbbbbb;
+    top: 60px;
+    left: -9px;
+}
+
+#sangtuda:after{
+    border-left: 0;
+    border-right: 12px solid #ffffff;
+    top: 57px;
+    left: -8px;
+}
